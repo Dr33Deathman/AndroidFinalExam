@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.country_page.CountryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_view_back"
+                android:layout_width="32dp"
+                android:foreground="?selectableItemBackground"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_height="32dp"/>
+
+            <TextView
+                android:id="@+id/text_view_country"
+                android:layout_width="wrap_content"
+                tools:text = "Azerbaijan"
+                android:layout_gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:layout_height="wrap_content"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/text_view_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="2020-20-20"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+        <TextView
+            android:id="@+id/text_view_confirmed"
+            android:layout_width="wrap_content"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_height="wrap_content"
+            tools:text = "Confirmed: 10000"/>
+
+        <TextView
+            android:id="@+id/text_view_deaths"
+            android:layout_width="wrap_content"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_height="wrap_content"
+            tools:text = "Deaths: 10000"/>
+
+        <TextView
+            android:id="@+id/text_view_recovered"
+            android:layout_width="wrap_content"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_height="wrap_content"
+            tools:text = "Recovered: 10000"/>
+
+        <TextView
+            android:id="@+id/text_view_active"
+            android:layout_width="wrap_content"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_height="wrap_content"
+            tools:text = "Active: 10000"/>
+
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
